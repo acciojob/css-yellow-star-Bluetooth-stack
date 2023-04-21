@@ -35,19 +35,19 @@
 	transform: rotate(-30deg) skewX(30deg);
 }
 
-.star::before{
+/* .star::before{
 	content: '';
 	height: 200px;
 	width: 200px;
 	background-color: inherit;
 	position: absolute;
 	left: -50px;
-/* 	border-bottom: 100px solid rgb(255, 255, 0); */
-}
+	border-bottom: 100px solid rgb(255, 255, 0);
+} */
 .star::after{
 	content: '';
-	height: 200px;
-	width: 250px;
+	height: 190px;
+	width: 190px;
 	background-color: inherit;
 	position: absolute;
 	left: -50px;
@@ -60,7 +60,7 @@
 }
 
 .star::after{
-	transform: skewX(-30deg)  rotate(-80deg) skewX(-30deg);
+	transform: rotate(-50deg);
 }
 
 
