@@ -1,5 +1,5 @@
 /*  your css code here. If applicable */
-.piece {
+/* .piece {
   width: 10em; height: 8.66em;
   background: yellow;
   transition: .5s;
@@ -21,4 +21,35 @@
 }
 .piece:after {
   transform: skewX(-30deg) rotate(-60deg) skewX(-30deg);
+} */
+
+.star{
+	width: 80px;
+	height:80px;
+	background-color: yellow;
+	position:relative;
+	margin: 50px auto;
+	transform: rotate(-30deg) skewX(30deg);
 }
+
+.star::before, .star::after{
+	content: '';
+	height: inherit;
+	width: inherit;
+	background-color: inherit;
+	position: absolute;
+}
+
+.star::before{
+	transform: skewX(-30deg) skewX(-30deg);
+}
+
+.star::after{
+	transform: skewX(-30deg)  rotate(-60deg) skewX(-30deg);
+}
+
+
+
+
+
+
