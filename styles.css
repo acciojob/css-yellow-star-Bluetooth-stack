@@ -30,24 +30,27 @@
 	position:relative;
 	margin: 50px auto;
 	border-bottom: 100px solid rgb(255, 255, 0);
-	border-left: '50px solid rgba(0, 0, 0, 0);
+	border-left: 50px solid rgba(0, 0, 0, 0);
+	border-right: 50px solid rgba(0, 0, 0, 0);
 	transform: rotate(-30deg) skewX(30deg);
 }
 
 .star::before{
 	content: '';
-	height: inherit;
-	width: inherit;
+	height: 200px;
+	width: 200px;
 	background-color: inherit;
 	position: absolute;
+	left: -50px;
 /* 	border-bottom: 100px solid rgb(255, 255, 0); */
 }
 .star::after{
 	content: '';
-	height: inherit;
-	width: inherit;
+	height: 200px;
+	width: 250px;
 	background-color: inherit;
 	position: absolute;
+	left: -50px;
 /* 	border-bottom: 100px solid rgb(255, 255, 0); */
 }
 
@@ -57,7 +60,7 @@
 }
 
 .star::after{
-	transform: skewX(-30deg)  rotate(-60deg) skewX(-30deg);
+	transform: skewX(-30deg)  rotate(-80deg) skewX(-30deg);
 }
 
 
