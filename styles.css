@@ -29,16 +29,27 @@
 	background-color: yellow;
 	position:relative;
 	margin: 50px auto;
+	border-bottom: 100px solid rgb(255, 255, 0);
 	transform: rotate(-30deg) skewX(30deg);
 }
 
-.star::before, .star::after{
+.star::before{
 	content: '';
 	height: inherit;
 	width: inherit;
 	background-color: inherit;
 	position: absolute;
+/* 	border-bottom: 100px solid rgb(255, 255, 0); */
 }
+.star::after{
+	content: '';
+	height: inherit;
+	width: inherit;
+	background-color: inherit;
+	position: absolute;
+/* 	border-bottom: 100px solid rgb(255, 255, 0); */
+}
+
 
 .star::before{
 	transform: skewX(-30deg) skewX(-30deg);
