@@ -1,1 +1,24 @@
 /*  your css code here. If applicable */
+.piece {
+  width: 10em; height: 8.66em;
+  background: yellow;
+  transition: .5s;
+  cursor: pointer;
+}
+.piece {
+  position: relative;
+  margin: 4em auto;
+  transform: rotate(-30deg) skewX(30deg);
+}
+.piece:before, .piece:after {
+  position: absolute;
+  width: inherit; height: inherit;
+  background: inherit;
+  content: '';
+}
+.piece:before {
+  transform: skewX(-30deg) skewX(-30deg);
+}
+.piece:after {
+  transform: skewX(-30deg) rotate(-60deg) skewX(-30deg);
+}
